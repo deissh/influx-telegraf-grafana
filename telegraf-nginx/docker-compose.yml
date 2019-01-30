@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  telegraf:
+    image: telegraf:latest
+    net: host
+    container_name: telegraf
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
